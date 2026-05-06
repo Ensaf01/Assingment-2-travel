@@ -185,7 +185,7 @@ body {
 }
 
 .destination-content {
-    border: 1px solid indigo;
+    /* border: 1px solid indigo; */
     text-align: center;
     width: 634px;
     margin-top: 40px;
@@ -194,7 +194,7 @@ body {
 
 .container-card {
     width: 1170px;
-    border: 1px solid indigo;
+    /* border: 1px solid indigo; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     /* grid-template-areas: 
@@ -294,7 +294,7 @@ grid-area: s;
 }
 
 .section-content {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 663px;
     height: 126px;
     margin-top: 40px;
@@ -302,7 +302,7 @@ grid-area: s;
 }
 
 .we-best-card-div {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
