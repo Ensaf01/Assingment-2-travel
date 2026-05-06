@@ -1,0 +1,272 @@
+.mulish-body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* share style */
+body {
+    max-width: 1440px;
+    margin: 10px auto;
+    padding: 0px 20px;
+    /* border: 1px solid rgb(13, 77, 238); */
+}
+
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: rgba(19, 19, 24, 0.7);
+    --primary-bg-color: rgba(255, 84, 0, 1);
+}
+
+.btn {
+    width: 174px;
+    height: 52px;
+    background-color: var(--primary-bg-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.normal-text {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--secondary-color);
+
+}
+
+/* navbar style */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 2.25rem;
+    font-weight: bolder;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.12rem;
+    font-weight: bold;
+
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* banner style */
+.banner {
+    background-image: url("/Images/Group\ 13\ \(1\)\ \(1\).png");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.banner-content {
+    color: var(--primary-color);
+    text-align: center;
+
+}
+
+.banner-content h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.banner-content p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    line-height: 1.2;
+    margin-bottom: 100px;
+}
+
+.form-div {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 800px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.banner-form {
+    display: flex;
+    gap: 10px
+}
+
+.form-div input,
+.form-div select,
+.form-div button {
+    width: 174px;
+    height: 52px;
+    border-radius: 5px;
+    border: none;
+    color: rgba(19, 19, 24, 0.5);
+    padding-left: 10px;
+}
+
+.popular-tours {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tour-container h1 {
+    font-size: 2.5 rem;
+    font-weight: bolder;
+
+}
+
+.tour-container p {
+    max-width: 540px;
+    margin-bottom: 30px;
+}
+
+.tour-container ul {
+    max-width: 525px;
+    max-height: 188px;
+    margin-bottom: 20px;
+}
+
+.tour-img {
+    width: 540px;
+    height: 550px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo img {
+        width: 24px;
+        height: 20px;
+    }
+
+    .logo h2 {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+
+    }
+
+    .banner {
+        min-height: auto;
+        padding: 0px 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.2rem;
+        /* margin: 0px; */
+    }
+
+    .banner-content p {
+        font-size: .8rem;
+        margin-bottom: 20px;
+
+    }
+
+    .banner-content p br {
+        display: none;
+    }
+
+    .form-div {
+        background-color: aqua;
+        width: 100%;
+        height: auto;
+        padding: px;
+
+    }
+
+    .banner-form {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-div input,
+    .form-div select,
+    .form-div button {
+        width: 255px;
+
+    }
+
+    .popular-tours {
+        flex-direction: column;
+    }
+
+    .tour-container h1 {
+        font-size: 1.25 rem;
+
+    }
+
+    .tour-container p {
+        width:335px;
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+
+    .tour-container ul {
+        max-width: 335px;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .tour-img {
+        width: 395px;
+        height: 442px;
+        margin-top: 30px;
+    }
+
+}
